@@ -31,10 +31,10 @@
     background-color: gray;
     border-radius: 50%;
 }
-/* Add this to styles.css */
+
 .bullet {
     position: absolute;
-    width: 5px; /* Width of the bullet */
-    height: 15px; /* Height of the bullet */
-    background-color: red; /* Color of the bullet */
+    width: 5px; 
+    height: 15px;
+    background-color: red; 
 }
