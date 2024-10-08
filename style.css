@@ -1,0 +1,40 @@
+#game-container {
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    position: relative;
+    overflow: hidden;
+}
+
+#robot {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+
+#rocks {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.rock {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    border-radius: 50%;
+}
+/* Add this to styles.css */
+.bullet {
+    position: absolute;
+    width: 5px; /* Width of the bullet */
+    height: 15px; /* Height of the bullet */
+    background-color: red; /* Color of the bullet */
+}
