@@ -42,6 +42,8 @@ function createRock() {
         function updateScoreboard() {
             scoreboard.textContent = 'Score: ' + score; // score ka updation
         }
+
+        
         function isColliding(element1, element2) {
             const rect1 = element1.getBoundingClientRect();
             const rect2 = element2.getBoundingClientRect();
@@ -65,11 +67,11 @@ function createRock() {
         
         // Function to shoot bullets
         function shootBullet() {
-            const bullet = document.createElement('div');
-            bullet.classList.add('bullet');
-            bullet.style.left = (robotX + robot.offsetWidth / 2 - 2.5) + 'px'; 
+            const bullet = document.createElement('div'); // jo div create hua yahi hmara bullet hai
+            bullet.classList.add('bullet'); // jisse style kar ske
+            bullet.style.left = (robotX + robot.offsetWidth / 2 - 2.5) + 'px';  //position of bullet
             bullet.style.bottom = '100px'; 
-            gameContainer.appendChild(bullet);
+            gameContainer.appendChild(bullet); //jisse dikh skee
         
             const bulletInterval = setInterval(() => {
                 bullet.style.bottom = parseInt(bullet.style.bottom) + 5 + 'px'; 
